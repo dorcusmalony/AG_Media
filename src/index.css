@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Lora", serif;
+
+  /* Logo-aligned Background & Canvas (Crisp White & Cool Grays) */
+  --color-sand-50: #FCFDFF; /* Crisp light backdrop with very subtle 1% blue tint */
+  --color-sand-100: #F1F5F9; /* Slate-100 */
+  --color-sand-200: #E2E8F0; /* Slate-200 borders */
+  --color-sand-300: #CBD5E1; /* Slate-300 for scrollbars */
+  
+  /* Primary Brand Blue (From central AG lettering and outer text) */
+  --color-clay-50: #F0F7FF; /* Extremely soft blue background tint */
+  --color-clay-100: #E1EFFE; /* Light blue highlight */
+  --color-clay-500: #0062C4; /* Logo Primary Royal Blue */
+  --color-clay-600: #004F9F; /* Slightly darker Royal Blue for hovers */
+  --color-clay-700: #003F7F;
+  --color-clay-800: #002F5F;
+  --color-clay-900: #091E3A; /* Dark navy-charcoal for high-density headers */
+
+  /* Secondary Brand Green (From the central AG green arc and outer border) */
+  --color-ochre-500: #129207; /* Logo Vibrant Kelly Green */
+  --color-ochre-600: #0E6F05; /* Deep Green for hovers */
+  --color-ochre-700: #0B5604;
+
+  /* Charcoal/Neutrals */
+  --color-charcoal-50: #F8FAFC;
+  --color-charcoal-100: #F1F5F9;
+  --color-charcoal-800: #1E293B;
+  --color-charcoal-900: #0F172A; /* Slate-900 */
+  --color-charcoal-950: #020617;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sand-50);
+  color: var(--color-charcoal-900);
+}
+
+/* Custom transitions and scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sand-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ochre-600);
+}

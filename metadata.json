@@ -1,0 +1,6 @@
+{
+  "name": "AG Media",
+  "description": "A serious, authoritative media, communications, and cultural documentation platform rooted in South Sudanese experience and Australian professional standards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
